@@ -38,6 +38,10 @@ public class Quiz {
 
     private static int getNumUserAnswer() {
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        if (scanner.hasNextInt()) {
+            return scanner.nextInt();
+        } else {
+            return 0;
+        }
     }
 }
