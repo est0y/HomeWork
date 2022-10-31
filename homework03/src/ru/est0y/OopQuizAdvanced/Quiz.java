@@ -2,7 +2,6 @@ package ru.est0y.OopQuizAdvanced;
 
 public class Quiz {
     public static void main(String[] args) {
-        User user = new User();
         final Question[] QUESTIONS = {
                 new Question("Сколько примитивных типов есть в Java?",
                         new AnswerOptions(new String[]{"100", "5", "1", "8"}),
@@ -17,6 +16,7 @@ public class Quiz {
                         new CorrectNumAnswer(3)
                 )
         };
+        User user = new User();
         for (Question question : QUESTIONS) {
             question.askQuestion();
             boolean correctnessAnswer = question.checkAnswer(user.getAnswer());
