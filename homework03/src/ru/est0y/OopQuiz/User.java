@@ -1,4 +1,4 @@
-package ru.est0y.OopQuizAdvanced;
+package ru.est0y.OopQuiz;
 
 import java.util.Scanner;
 
