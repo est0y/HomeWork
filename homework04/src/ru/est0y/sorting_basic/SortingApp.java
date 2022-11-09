@@ -1,4 +1,4 @@
-package ru.est0y.SortingBasic;
+package ru.est0y.sorting_basic;
 
 import java.util.ArrayList;
 import java.util.Collections;

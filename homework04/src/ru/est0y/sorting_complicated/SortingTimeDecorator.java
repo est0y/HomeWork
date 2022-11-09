@@ -1,4 +1,4 @@
-package ru.est0y.SortingComplicated;
+package ru.est0y.sorting_complicated;
 
 import java.util.Date;
 import java.util.List;
