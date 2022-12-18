@@ -1,4 +1,5 @@
-package  ru.est0y.user_list;
+package ru.est0y.user_list;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -6,7 +7,7 @@ import java.util.Scanner;
 public class UserInput {
     List<String> getList() {
         System.out.println("Введите поочередно элементы списка(оставте строку пустой для завершения ввода)");
-        ArrayList<String> arrayList=new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         while (true) {
             String line = scanner.nextLine();
@@ -17,19 +18,22 @@ public class UserInput {
         }
         return arrayList;
     }
-    int getInteger(){
-        try{
+
+    int getInteger() {
+        try {
             Scanner scanner = new Scanner(System.in);
             return scanner.nextInt();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Введенная строка не является целым числом");
             return getInteger();
         }
     }
-    String getLine(){
+
+    String getLine() {
         return new Scanner(System.in).nextLine();
     }
-    String getCommand(){
+
+    String getCommand() {
         System.out.println("Введите команду");
         return getLine();
     }
